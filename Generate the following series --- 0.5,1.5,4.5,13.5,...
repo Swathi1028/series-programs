@@ -1,0 +1,20 @@
+import java.util.*;
+class Main
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    double digit = 0.5;
+    System.out.print(digit + " ");
+    for(int i=1;i<n;i++){
+      digit = digit*3;
+    System.out.print(digit + " ");
+    }
+  }
+}
+
+Sample Input:
+5
+Sample Output:
+0.5 1.5 4.5 13.5 40.5
