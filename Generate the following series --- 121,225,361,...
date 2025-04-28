@@ -1,0 +1,21 @@
+import java.util.*;
+class Main
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    int term = 11;
+    System.out.print(term*term + " ");
+    for(int i=1;i<n;i++){
+      term += 4;
+      int result = term*term;
+       System.out.print(result + " ");
+    }
+  }
+}
+
+Sample Input:
+4
+Sample Output:
+121 225 361 529
