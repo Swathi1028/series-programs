@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class MultipleOfFiveSeries {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        // Ask the user how many numbers to print
+        System.out.print("Enter how many numbers to print (n): ");
+        int n = scanner.nextInt();
+        // Print the first n multiples of 5
+        for (int i = 1; i <= n; i++) {
+            System.out.print(i * 5 + " ");
+        }
+        scanner.close();
+    }
+}
+output:
+Enter how many numbers to print (n): 6
+5 10 15 20 25 30
