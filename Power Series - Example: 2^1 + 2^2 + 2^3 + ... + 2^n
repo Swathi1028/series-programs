@@ -1,0 +1,18 @@
+public class PowerSeries {
+    public static void main(String[] args) {
+        int base = 2;
+        int n = 5;
+        int sum = 0;
+        System.out.print("Power Series: ");
+        for (int i = 1; i <= n; i++) {
+            int term = (int)Math.pow(base, i);
+            System.out.print(term + " ");
+            sum += term;
+        }
+        System.out.println("\nSum: " + sum);
+    }
+}
+
+output:
+Power Series: 2 4 8 16 32 
+Sum: 62
