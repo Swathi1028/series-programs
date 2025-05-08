@@ -1,0 +1,23 @@
+public class AlternatingSeries {
+    public static void main(String[] args) {
+        int n = 10;
+        int sum = 0;
+
+        System.out.print("Alternating Series: ");
+        for (int i = 1; i <= n; i++) {
+            if (i % 2 == 0) {
+                System.out.print("-" + i + " ");
+                sum -= i;
+            } else {
+                System.out.print("+" + i + " ");
+                sum += i;
+            }
+        }
+        System.out.println("\nSum: " + sum);
+    }
+}
+
+Example: 1 - 2 + 3 - 4 + 5 - 6 + ...
+output:
+Alternating Series: +1 -2 +3 -4 +5 -6 +7 -8 +9 -10 
+Sum: -5
