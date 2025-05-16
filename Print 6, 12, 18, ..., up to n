@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class SeriesBy6UpToN {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the value of n: ");
+        int n = scanner.nextInt();
+        System.out.println("Series:");
+        for (int i = 6; i <= n; i += 6) {
+            System.out.print(i + " ");
+        }
+        scanner.close();
+    }
+}
+
+Input:
+Enter the value of n: 30
+Output:
+Series:
+6 12 18 24 30 
